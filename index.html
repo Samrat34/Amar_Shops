@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/cstyle.css" type="text/css">
 </head>
 
 <body>
@@ -29,8 +30,8 @@
         <div class="loader"></div>
     </div>
 
-     <!-- Header Section Begin -->
-     <header class="header">
+    <!-- Header Section Begin -->
+    <header class="header">
         <div class="header__top">
             <div class="container">
                 <div class="row">
@@ -59,10 +60,10 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="img/logo.png" alt="Amar Shop"></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -73,7 +74,7 @@
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="./shoping-cart.html">Shopping Cart</a></li>
                                     <li><a href="./checkout.html">Check Out</a></li>
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul>
@@ -97,6 +98,7 @@
                 <i class="fa fa-bars"></i>
             </div>
         </div>
+        
     </header>
     <!-- Header Section End -->
 
@@ -113,7 +115,7 @@
             <div class="header__cart__price">item: <span>৳ 150.00</span></div>
         </div>
         <div class="humberger__menu__widget">
-            
+
             <div class="header__top__right__auth">
                 <a href="#"><i class="fa fa-user"></i> Login</a>
             </div>
@@ -150,7 +152,7 @@
     </div>
     <!-- Humberger End -->
 
-   
+
 
     <!-- Hero Section Begin -->
     <section class="hero">
@@ -177,8 +179,8 @@
                             <li><a href="#">Kids' Clothing</a></li>
                             <li><a href="#">Kids' Shoes</a></li>
                         </ul>
-                        
-                        
+
+
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -218,23 +220,53 @@
     <!-- Hero Section End -->
 
     <!-- Banner Begin -->
-    <div class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="banner__pic">
-                        <img src="img/banner/banner-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="banner__pic"><a href="">
-                        <img src="img/banner/banner-2.jpg" alt=""></a>
+    <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="banner__pic">
+                                <img src="img/banner/banner-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="banner__pic">
+                                <a href=""><img src="img/banner/banner-2.jpg" alt=""></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Repeat for other images -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="banner__pic">
+                                <img src="img/banner/banner-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="banner__pic">
+                                <a href=""><img src="img/banner/banner-2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more carousel items as needed -->
         </div>
+        <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <!-- Banner End -->
+    
 
 
     <!-- Categories Section Begin -->
@@ -279,11 +311,11 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
     <!-- Categories Section End -->
-
+    s
     <!-- Featured Section Begin -->
     <section class="featured spad">
         <div class="container">
@@ -645,8 +677,8 @@
                             <a href="./index.html"><img src="img/logo.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
+                            <li>Address: Dhaka, Bangladesh</li>
+                            <li>Phone: +880 1234567890</li>
                             <li>Email: amarshop@gmail.com</li>
                         </ul>
                     </div>
@@ -655,19 +687,18 @@
                     <div class="footer__widget">
                         <h6>Useful Links</h6>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="faq.html">Faq</a></li>
                             <li><a href="#">Secure Shopping</a></li>
                             <li><a href="#">Delivery infomation</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Our Sitemap</a></li>
+                            <li><a href="sitmap.html">Our Sitemap</a></li>
+                            <li><a href="vendor.html">Join as Vendor</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">Who We Are</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">Innovation</a></li>
                             <li><a href="#">Testimonials</a></li>
                         </ul>
                     </div>
@@ -692,9 +723,14 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer__copyright">
-                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__text">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                                template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#"
+                                    target="_blank">amarshop_team</a>
+                            </p>
+                        </div>
                         <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                     </div>
                 </div>
@@ -712,6 +748,7 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/cmain.js"></script>
 
 
 
