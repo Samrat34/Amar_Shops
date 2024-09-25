@@ -340,9 +340,40 @@
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
                             <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <!-- Wish List Icon with Dropdown -->
+                                <li class="dropdown">
+                                    <a href="#" id="wishlistDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                    <div class="dropdown-menu p-3" aria-labelledby="wishlistDropdown" style="min-width: 200px;">
+                                        <div class="wishlist-item d-flex align-items-center">
+                                            <img src="img/featured/feature-1.jpg" alt="Product Image" style="width: 50px; height: 50px; margin-right: 10px;">
+                                            <div>
+                                                <p class="mb-1">Crab Pool Security</p>
+                                                <span class="price">৳30.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <!-- Retweet Icon -->
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                
+                                <!-- Shopping Cart Icon with Dropdown -->
+                                <li class="dropdown">
+                                    <a href="#" id="cartDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                    <div class="dropdown-menu p-3" aria-labelledby="cartDropdown" style="min-width: 200px;">
+                                        <div class="cart-item d-flex align-items-center">
+                                            <img src="img/featured/feature-1.jpg" alt="Product Image" style="width: 50px; height: 50px; margin-right: 10px;">
+                                            <div>
+                                                <p class="mb-1">Crab Pool Security</p>
+                                                <span class="price">৳30.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
@@ -351,6 +382,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
