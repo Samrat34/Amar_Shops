@@ -5,7 +5,7 @@
     $title = "Register";
     include 'partials/title-meta.php'; ?>
 
-     <?php include 'partials/head-css.php'; ?>
+    <?php include 'partials/head-css.php'; ?>
 </head>
 
 <body class="authentication-bg">
@@ -61,10 +61,9 @@
                                                 </div>
                                             </div>
                                             <div class="mb-0 d-grid text-center">
-                                                <button class="btn btn-primary fw-semibold" type="submit">Sign
-                                                    Up</button>
+                                                <a href="index.php"> <button class="btn btn-primary fw-semibold" type="submit">Sign
+                                                        Up</button></a>
                                             </div>
-
                                             <div class="text-center mt-4">
                                                 <p class="text-muted fs-16">Sign in with</p>
                                                 <div class="d-flex gap-2 justify-content-center mt-3">
@@ -103,7 +102,9 @@
 
     <footer class="footer footer-alt fw-medium">
         <span class="text-dark-emphasis">
-            <script>document.write(new Date().getFullYear())</script> © Velonic - Theme by Techzaa
+            <script>
+                document.write(new Date().getFullYear())
+            </script> © Velonic - Theme by Techzaa
         </span>
     </footer>
 

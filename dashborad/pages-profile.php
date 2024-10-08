@@ -5,7 +5,7 @@
     $title = "Profile";
     include 'partials/title-meta.php'; ?>
 
-     <?php include 'partials/head-css.php'; ?>
+    <?php include 'partials/head-css.php'; ?>
 </head>
 
 <body>
@@ -66,10 +66,15 @@
                                 <div class="card-body p-0">
                                     <div class="profile-content">
                                         <ul class="nav nav-underline nav-justified gap-0">
+
                                             <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab"
                                                     data-bs-target="#aboutme" type="button" role="tab"
                                                     aria-controls="home" aria-selected="true" href="#aboutme">About</a>
                                             </li>
+                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#projects" type="button" role="tab"
+                                                    aria-controls="home" aria-selected="true"
+                                                    href="#projects">Your Produtc</a></li>
                                             <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
                                                     data-bs-target="#user-activities" type="button" role="tab"
                                                     aria-controls="home" aria-selected="true"
@@ -78,10 +83,7 @@
                                                     data-bs-target="#edit-profile" type="button" role="tab"
                                                     aria-controls="home" aria-selected="true"
                                                     href="#edit-profile">Settings</a></li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
-                                                    data-bs-target="#projects" type="button" role="tab"
-                                                    aria-controls="home" aria-selected="true"
-                                                    href="#projects">Projects</a></li>
+
                                         </ul>
 
                                         <div class="tab-content m-0 p-4">
@@ -268,77 +270,128 @@
                                                     </form>
                                                 </div>
                                             </div>
-
                                             <!-- profile -->
                                             <div id="projects" class="tab-pane">
-                                                <div class="row m-t-10">
-                                                    <div class="col-md-12">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-bordered mb-0">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>#</th>
-                                                                        <th>Project Name</th>
-                                                                        <th>Start Date</th>
-                                                                        <th>Due Date</th>
-                                                                        <th>Status</th>
-                                                                        <th>Assign</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>1</td>
-                                                                        <td>Velonic Admin</td>
-                                                                        <td>01/01/2015</td>
-                                                                        <td>07/05/2015</td>
-                                                                        <td><span class="badge bg-info">Work
-                                                                                in Progress</span></td>
-                                                                        <td>Techzaa</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>2</td>
-                                                                        <td>Velonic Frontend</td>
-                                                                        <td>01/01/2015</td>
-                                                                        <td>07/05/2015</td>
-                                                                        <td><span
-                                                                                class="badge bg-success">Pending</span>
-                                                                        </td>
-                                                                        <td>Techzaa</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>3</td>
-                                                                        <td>Velonic Admin</td>
-                                                                        <td>01/01/2015</td>
-                                                                        <td>07/05/2015</td>
-                                                                        <td><span class="badge bg-pink">Done</span>
-                                                                        </td>
-                                                                        <td>Techzaa</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>4</td>
-                                                                        <td>Velonic Frontend</td>
-                                                                        <td>01/01/2015</td>
-                                                                        <td>07/05/2015</td>
-                                                                        <td><span class="badge bg-purple">Work
-                                                                                in Progress</span></td>
-                                                                        <td>Techzaa</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>5</td>
-                                                                        <td>Velonic Admin</td>
-                                                                        <td>01/01/2015</td>
-                                                                        <td>07/05/2015</td>
-                                                                        <td><span class="badge bg-warning">Coming
-                                                                                soon</span></td>
-                                                                        <td>Techzaa</td>
-                                                                    </tr>
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <h4 class="header-title">Product List</h4>
+                                                                <p class="text-muted mb-0">
+                                                                    A detailed product list with product ID, image, name, category, price, and brand.
+                                                                </p>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="table-responsive-sm">
+                                                                    <table class="table table-striped table-centered mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Product ID</th>
+                                                                                <th>Product Image</th>
+                                                                                <th>Product Name</th>
+                                                                                <th>Category</th>
+                                                                                <th>Price</th>
+                                                                                <th>Brand</th>
+                                                                                <th>Product Details</th>
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>001</td>
+                                                                                <td><img src="image1.jpg" alt="Product Image" class="rounded" width="50"></td>
+                                                                                <td>Product A</td>
+                                                                                <td>Electronics</td>
+                                                                                <td>$150.00</td>
+                                                                                <td>Brand X</td>
+                                                                                <td><a href="ui-carousel.php">View Details</a></td>
+                                                                                <td>
+                                                                                    <a href="edit-product-001.html" class="text-reset px-1">
+                                                                                        <i class="ri-edit-2-line"></i>
+                                                                                    </a>
+                                                                                    <a href="javascript:void(0);" class="text-reset px-1">
+                                                                                        <i class=" ri-delete-bin-6-line"></i>
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>002</td>
+                                                                                <td><img src="image2.jpg" alt="Product Image" class="rounded" width="50"></td>
+                                                                                <td>Product B</td>
+                                                                                <td>Clothing</td>
+                                                                                <td>$35.00</td>
+                                                                                <td>Brand Y</td>
+                                                                                <td><a href="product-details-002.html">View Details</a></td>
+                                                                                <td>
+                                                                                    <a href="edit-product-002.html" class="text-reset px-1">
+                                                                                        <i class="ri-edit-2-line"></i>
+                                                                                    </a>
+                                                                                    <a href="javascript:void(0);" class="text-reset px-1">
+                                                                                        <i class="ri-delete-bin-6-line"></i>
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>003</td>
+                                                                                <td><img src="image3.jpg" alt="Product Image" class="rounded" width="50"></td>
+                                                                                <td>Product C</td>
+                                                                                <td>Accessories</td>
+                                                                                <td>$20.00</td>
+                                                                                <td>Brand Z</td>
+                                                                                <td><a href="product-details-003.html">View Details</a></td>
+                                                                                <td>
+                                                                                    <a href="edit-product-003.html" class="text-reset px-1">
+                                                                                        <i class="ri-edit-2-line"></i>
+                                                                                    </a>
+                                                                                    <a href="javascript:void(0);" class="text-reset px-1">
+                                                                                        <i class="ri-delete-bin-6-line"></i>
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>004</td>
+                                                                                <td><img src="image4.jpg" alt="Product Image" class="rounded" width="50"></td>
+                                                                                <td>Product D</td>
+                                                                                <td>Home Appliances</td>
+                                                                                <td>$250.00</td>
+                                                                                <td>Brand A</td>
+                                                                                <td><a href="product-details-004.html">View Details</a></td>
+                                                                                <td>
+                                                                                    <a href="edit-product-004.html" class="text-reset px-1">
+                                                                                        <i class="ri-edit-2-line"></i>
+                                                                                    </a>
+                                                                                    <a href="javascript:void(0);" class="text-reset px-1">
+                                                                                        <i class="ri-delete-bin-6-line"></i>
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>005</td>
+                                                                                <td><img src="image5.jpg" alt="Product Image" class="rounded" width="50"></td>
+                                                                                <td>Product E</td>
+                                                                                <td>Footwear</td>
+                                                                                <td>$80.00</td>
+                                                                                <td>Brand B</td>
+                                                                                <td><a href="product-details-005.html">View Details</a></td>
+                                                                                <td>
+                                                                                    <a href="edit-product-005.html" class="text-reset px-1">
+                                                                                        <i class="ri-edit-2-line"></i>
+                                                                                    </a>
+                                                                                    <a href="javascript:void(0);" class="text-reset px-1">
+                                                                                        <i class="ri-delete-bin-6-line"></i>
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div> <!-- end table-responsive-->
+                                                            </div> <!-- end card body-->
+                                                        </div> <!-- end card -->
+                                                    </div><!-- end col-->
                                                 </div>
+                                                <!-- end row -->
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
