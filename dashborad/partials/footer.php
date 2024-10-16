@@ -3,7 +3,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center">
-                <script>document.write(new Date().getFullYear())</script> © Velonic - Theme by <b>Techzaa</b>
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> © Team <b>amar_shop</b>
             </div>
         </div>
     </div>
