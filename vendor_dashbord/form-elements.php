@@ -5,7 +5,7 @@
     $title = "Form Elements";
     include 'partials/title-meta.php'; ?>
 
-     <?php include 'partials/head-css.php'; ?>
+    <?php include 'partials/head-css.php'; ?>
 </head>
 
 <body>
@@ -24,10 +24,10 @@
                 <!-- Start Content-->
                 <div class="container-fluid">
 
-                     <?php
+                    <?php
                     $sub_title = "Forms";
                     $page_title = "Form Elements";
-    include 'partials/page-title.php'; ?>
+                    include 'partials/page-title.php'; ?>
 
                     <div class="row">
                         <div class="col-12">

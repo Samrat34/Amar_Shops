@@ -26,7 +26,7 @@
 
                     <?php
                     $sub_title = "Pages";
-                    $page_title = "Starter";
+                    $page_title = "Users";
                     include 'partials/page-title.php'; ?>
 
                 </div> <!-- container -->

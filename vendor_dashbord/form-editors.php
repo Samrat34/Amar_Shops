@@ -10,7 +10,7 @@
     <link href="assets/css/vendor/quill.snow.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/vendor/quill.bubble.css" rel="stylesheet" type="text/css" />
 
-     <?php include 'partials/head-css.php'; ?>
+    <?php include 'partials/head-css.php'; ?>
 
 </head>
 
@@ -30,10 +30,10 @@
                 <!-- Start Content-->
                 <div class="container-fluid">
 
-                     <?php
+                    <?php
                     $sub_title = "Forms";
                     $page_title = "Editors";
-    include 'partials/page-title.php'; ?>
+                    include 'partials/page-title.php'; ?>
 
                     <div class="row">
                         <div class="col-12">

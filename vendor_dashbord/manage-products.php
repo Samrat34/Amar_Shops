@@ -2,15 +2,15 @@
 
 <head>
     <?php
-    $title = "Manage Product";
+    $title = "Products";
     include 'partials/title-meta.php'; ?>
-
     <?php include 'partials/head-css.php'; ?>
 </head>
 
 <body>
     <!-- Begin page -->
     <div class="wrapper">
+
         <?php include 'partials/menu.php'; ?>
 
         <!-- ============================================================== -->
@@ -22,112 +22,130 @@
 
                 <!-- Start Content-->
                 <div class="container-fluid">
-
                     <?php
-                    $sub_title = "Pages";
-                    $page_title = "Manage Product";
+                    $sub_title = "Products";
+                    $page_title = "Manage Products";
                     include 'partials/page-title.php'; ?>
-
-
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="header-title mb-4">Product List</h4>
-                                    <div class="table-responsive">
-                                        <table class="table table-centered mb-0 table-nowrap" id="btn-editable">
-                                            <thead>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Actions</th>
-                                                    <th>Image</th>
-                                                    <th>Name</th>
-                                                    <th>Category</th>
-                                                    <th>Color</th>
-                                                    <th>Size</th>
-                                                    <th>Price</th>
-                                                    <th>Description</th>
-                                                    <th>Stock</th>
-
-                                                </tr>
-                                            </thead>
-
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>
-                                                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
-                                                        <button class="btn btn-danger btn-sm delete-btn">Delete</button>
-                                                    </td>
-                                                    <td><img src="path-to-image.jpg" alt="Product Image" width="50"></td>
-                                                    <td class="editable">Product Name</td>
-                                                    <td class="editable">Category Name</td>
-                                                    <td class="editable">Red</td>
-                                                    <td class="editable">M</td>
-                                                    <td class="editable">$20.00</td>
-                                                    <td class="editable">Short product description.</td>
-                                                    <td class="editable">In Stock</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>
-                                                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
-                                                        <button class="btn btn-danger btn-sm delete-btn">Delete</button>
-                                                    </td>
-                                                    <td><img src="path-to-image.jpg" alt="Product Image" width="50"></td>
-                                                    <td class="editable">Product Name</td>
-                                                    <td class="editable">Category Name</td>
-                                                    <td class="editable">Red</td>
-                                                    <td class="editable">M</td>
-                                                    <td class="editable">$20.00</td>
-                                                    <td class="editable">Short product description.</td>
-                                                    <td class="editable">In Stock</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>
-                                                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
-                                                        <button class="btn btn-danger btn-sm delete-btn">Delete</button>
-                                                    </td>
-                                                    <td><img src="path-to-image.jpg" alt="Product Image" width="50"></td>
-                                                    <td class="editable">Product Name</td>
-                                                    <td class="editable">Category Name</td>
-                                                    <td class="editable">Red</td>
-                                                    <td class="editable">M</td>
-                                                    <td class="editable">$20.00</td>
-                                                    <td class="editable">Short product description.</td>
-                                                    <td class="editable">In Stock</td>
-
-                                                </tr>
-
-                                                <!-- Repeat the above <tr> block for each product row -->
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- end .table-responsive-->
-                                </div>
-                                <!-- end card-body -->
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
                 </div> <!-- container -->
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="header-title">Product Information</h4>
+                                <p class="text-muted mb-0">Manage product details including image, name, type, stocks, SKU, price, variants, and actions.</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive-sm">
+                                    <table class="table table-striped table-centered mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Product Name</th>
+                                                <th>Type</th>
+                                                <th>Stocks</th>
+                                                <th>SKU</th>
+                                                <th>Price</th>
+                                                <th>Variants</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="table-user">
+                                                    <img src="path/to/image.jpg" alt="Product Image" class="me-2" style="width: 50px; height: 50px;" />
+                                                </td>
+                                                <td>Example Product</td>
+                                                <td>Product Type</td>
+                                                <td>
+                                                    <select class="form-select">
+                                                        <option value="yes">Yes</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                                </td>
+                                                <td>SKU12345</td>
+                                                <td>$99.99</td>
+                                                <td>Variant 1</td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-settings-3-line"></i></a>
+                                                    <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-delete-bin-2-line"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-user">
+                                                    <img src="path/to/image.jpg" alt="Product Image" class="me-2" style="width: 50px; height: 50px;" />
+                                                </td>
+                                                <td>Example Product</td>
+                                                <td>Product Type</td>
+                                                <td>
+                                                    <select class="form-select">
+                                                        <option value="yes">Yes</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                                </td>
+                                                <td>SKU12345</td>
+                                                <td>$99.99</td>
+                                                <td>Variant 1</td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-settings-3-line"></i></a>
+                                                    <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-delete-bin-2-line"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-user">
+                                                    <img src="path/to/image.jpg" alt="Product Image" class="me-2" style="width: 50px; height: 50px;" />
+                                                </td>
+                                                <td>Example Product</td>
+                                                <td>Product Type</td>
+                                                <td>
+                                                    <select class="form-select">
+                                                        <option value="yes">Yes</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                                </td>
+                                                <td>SKU12345</td>
+                                                <td>$99.99</td>
+                                                <td>Variant 1</td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-settings-3-line"></i></a>
+                                                    <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-delete-bin-2-line"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-user">
+                                                    <img src="path/to/image.jpg" alt="Product Image" class="me-2" style="width: 50px; height: 50px;" />
+                                                </td>
+                                                <td>Example Product</td>
+                                                <td>Product Type</td>
+                                                <td>
+                                                    <select class="form-select">
+                                                        <option value="yes">Yes</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                                </td>
+                                                <td>SKU12345</td>
+                                                <td>$99.99</td>
+                                                <td>Variant 1</td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-settings-3-line"></i></a>
+                                                    <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-delete-bin-2-line"></i></a>
+                                                </td>
+                                            </tr>
+                                            <!-- Additional rows can be added here -->
+                                        </tbody>
+                                    </table>
+                                </div> <!-- end table-responsive -->
+                            </div> <!-- end card-body -->
+                        </div> <!-- end card -->
+                    </div><!-- end col -->
+                </div> <!-- end row -->
 
-            </div> <!-- container -->
+            </div> <!-- content -->
+            <?php include 'partials/footer.php'; ?>
+        </div>
 
-        </div> <!-- content -->
-
-        <?php include 'partials/footer.php'; ?>
-
-    </div>
-
-    <!-- ============================================================== -->
-    <!-- End Page content -->
-    <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
 
     </div>
     <!-- END wrapper -->
@@ -138,30 +156,6 @@
 
     <!-- App js -->
     <script src="assets/js/app.min.js"></script>
-    <script>
-        document.querySelectorAll('#btn-editable .edit-btn').forEach(function(button) {
-            button.addEventListener('click', function() {
-                const row = button.closest('tr');
-                const isEditing = row.classList.contains('editing');
-
-                if (isEditing) {
-                    row.querySelectorAll('.editable').forEach(function(cell) {
-                        const input = cell.querySelector('input');
-                        if (input) cell.textContent = input.value;
-                    });
-                    button.textContent = 'Edit';
-                    row.classList.remove('editing');
-                } else {
-                    row.querySelectorAll('.editable').forEach(function(cell) {
-                        const cellText = cell.textContent;
-                        cell.innerHTML = `<input type="text" class="form-control" value="${cellText}">`;
-                    });
-                    button.textContent = 'Save';
-                    row.classList.add('editing');
-                }
-            });
-        });
-    </script>
 
 </body>
 
