@@ -41,7 +41,7 @@
                                         </p>
 
                                         <button type="button" class="btn btn-success mt-2"><i class="ri-mail-line me-1"></i> Email us your question</button>
-                                        <button type="button" class="btn btn-info mt-2 ms-1"><i class="ri-twitter-line me-1"></i> Send us a tweet</button>
+                                        <button type="button" class="btn btn-info mt-2 ms-1"><i class="ri-message-line me-1"></i> Contact With Admin</button>
                                     </div>
                                 </div><!-- end col -->
                             </div><!-- end row -->

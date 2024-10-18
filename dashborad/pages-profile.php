@@ -36,12 +36,12 @@
                             <div class="profile-user-box">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="profile-user-img"><img src="assets/images/users/avatar-1.jpg" alt=""
+                                        <div class="profile-user-img"><img src="assets/images/logo.png" alt=""
                                                 class="avatar-lg rounded-circle"></div>
                                         <div class="">
-                                            <h4 class="mt-4 fs-17 ellipsis">Michael A. Franklin</h4>
-                                            <p class="font-13"> User Experience Specialist</p>
-                                            <p class="text-muted mb-0"><small>California, United States</small></p>
+                                            <h4 class="mt-4 fs-17 ellipsis">Amar Shop Admin</h4>
+                                            <p class="font-13"> Admin Controller</p>
+                                            <p class="text-muted mb-0"><small>Dhaka, Bangladesh</small></p>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -50,7 +50,7 @@
                                                 <i class="ri-settings-2-line align-text-bottom me-1 fs-16 lh-1"></i>
                                                 Edit Profile
                                             </button>
-                                            <a class="btn btn-soft-info" href="#"> <i class="ri-check-double-fill fs-18 me-1 lh-1"></i> Following</a>
+                                            <!-- <a class="btn btn-soft-info" href="#"> <i class="ri-check-double-fill fs-18 me-1 lh-1"></i> Following</a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -71,14 +71,14 @@
                                                     data-bs-target="#aboutme" type="button" role="tab"
                                                     aria-controls="home" aria-selected="true" href="#aboutme">About</a>
                                             </li>
-                                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
+                                            <!-- <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
                                                     data-bs-target="#projects" type="button" role="tab"
                                                     aria-controls="home" aria-selected="true"
                                                     href="#projects">Your Produtc</a></li>
                                             <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
                                                     data-bs-target="#user-activities" type="button" role="tab"
                                                     aria-controls="home" aria-selected="true"
-                                                    href="#user-activities">Activities</a></li>
+                                                    href="#user-activities">Activities</a></li> -->
                                             <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
                                                     data-bs-target="#edit-profile" type="button" role="tab"
                                                     aria-controls="home" aria-selected="true"
@@ -90,17 +90,10 @@
                                             <div class="tab-pane active" id="aboutme" role="tabpanel"
                                                 aria-labelledby="home-tab" tabindex="0">
                                                 <div class="profile-desk">
-                                                    <h5 class="text-uppercase fs-17 text-dark">Johnathan Deo</h5>
-                                                    <div class="designation mb-4">PRODUCT DESIGNER (UX / UI / Visual
-                                                        Interaction)</div>
+                                                    <h5 class="text-uppercase fs-17 text-dark">Amar Shop Team</h5>
+                                                    <div class="designation mb-4">Super Admin</div>
                                                     <p class="text-muted fs-16">
-                                                        I have 10 years of experience designing for the web, and
-                                                        specialize
-                                                        in the areas of user interface design, interaction design,
-                                                        visual
-                                                        design and prototyping. I’ve worked with notable startups
-                                                        including
-                                                        Pearl Street Software.
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque alias repellendus sit voluptatum, sequi ut ullam assumenda expedita? Voluptatibus, dolores.
                                                     </p>
 
                                                     <h5 class="mt-4 fs-17 text-dark">Contact Information</h5>
@@ -110,7 +103,7 @@
                                                                 <th scope="row">Url</th>
                                                                 <td>
                                                                     <a href="#" class="ng-binding">
-                                                                        www.example.com
+                                                                        www.amarshop.com
                                                                     </a>
                                                                 </td>
                                                             </tr>
@@ -118,7 +111,7 @@
                                                                 <th scope="row">Email</th>
                                                                 <td>
                                                                     <a href="" class="ng-binding">
-                                                                        jonathandeo@example.com
+                                                                        amarshop@gmail.com
                                                                     </a>
                                                                 </td>
                                                             </tr>
@@ -131,7 +124,7 @@
                                                                 <th scope="row">Skype</th>
                                                                 <td>
                                                                     <a href="#" class="ng-binding">
-                                                                        jonathandeo123
+                                                                        @skaypeamarshop
                                                                     </a>
                                                                 </td>
                                                             </tr>

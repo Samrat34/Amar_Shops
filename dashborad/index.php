@@ -64,11 +64,41 @@
                                     <div class="float-end">
                                         <i class="ri-wallet-2-line widget-icon"></i>
                                     </div>
-                                    <h6 class="text-uppercase mt-0" title="Customers">Revenue</h6>
-                                    <h2 class="my-2">$9,254.62</h2>
+                                    <h6 class="text-uppercase mt-0" title="Customers">Total Tax</h6>
+                                    <h2 class="my-2">৳9,254.62</h2>
                                     <p class="mb-0">
                                         <span class="badge bg-white bg-opacity-10 me-1">18.25%</span>
                                         <span class="text-nowrap">Since last month</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <!-- end col-->
+                        <div class="col-xxl-3 col-sm-6">
+                            <div class="card widget-flat text-bg-danger">
+                                <div class="card-body">
+                                    <div class="float-end">
+                                        <i class="ri-wallet-2-line widget-icon"></i>
+                                    </div>
+                                    <h6 class="text-uppercase mt-0" title="Customers">Profit</h6>
+                                    <h2 class="my-2">৳9,2540000.62</h2>
+                                    <p class="mb-0">
+                                        <span class="badge bg-white bg-opacity-10 me-1">18.25%</span>
+                                        <span class="text-nowrap">Since last month</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <!-- end col-->
+                        <div class="col-xxl-3 col-sm-6">
+                            <div class="card widget-flat text-bg-success">
+                                <div class="card-body">
+                                    <div class="float-end">
+                                        <i class="ri-wallet-2-line widget-icon"></i>
+                                    </div>
+                                    <h6 class="text-uppercase mt-0" title="Customers">Delivery Partner</h6>
+                                    <h2 class="my-2">92</h2>
+                                    <p class="mb-0">
+                                        <span class="badge bg-white bg-opacity-10 me-1">4</span>
+                                        <span class="text-nowrap">Join last month</span>
                                     </p>
                                 </div>
                             </div>
@@ -143,7 +173,7 @@
                                                                 <td>July 24, 2023</td>
                                                                 <td>Pending</td>
                                                                 <td>
-                                                                    <a href="javascript:void(0);" class="text-reset fs-16 px-1" onclick="openVendorPopup('Risa D. Pearson', 'AC336 508 2157', '$10,000')">
+                                                                    <a href="javascript:void(0);" class="text-reset fs-16 px-1" onclick="openVendorPopup('Risa D. Pearson', 'AC336 508 2157', '৳10,000')">
                                                                         <i class="ri-eye-line"></i>
                                                                     </a>
 
