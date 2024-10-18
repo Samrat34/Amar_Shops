@@ -48,7 +48,7 @@
                             <a href="pages-starter.php">Starter Page</a>
                         </li>
                         <li>
-                            <a href="pages-contact-list.php">Contact List</a>
+                            <a href="pages-contact-list.php">User List</a>
                         </li>
                         <li>
                             <a href="pages-profile.php">Profile</a>
@@ -89,9 +89,9 @@
                 <div class="collapse" id="sidebarMultiLevel">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="manage-products.php">Manage Product</a>
+                            <a href="manage-products.php">Product Request</a>
                             <a href="add-products.php">Add Product</a>
-                            <a href="media.php">Media Center</a>
+                            <a href="media.php">Media Request</a>
                         </li>
                         <!-- <li class="side-nav-item">
                             <a data-bs-toggle="collapse" href="#sidebarSecondLevel" aria-expanded="false" aria-controls="sidebarSecondLevel">
@@ -167,7 +167,29 @@
                     </ul>
                 </div>
             </li>
-
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarExtendedUI" aria-expanded="false" aria-controls="sidebarExtendedUI" class="side-nav-link">
+                    <i class="ri-compasses-2-line"></i>
+                    <span> Extended UI </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarExtendedUI">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="homepage.php">Home Pase</a>
+                        </li>
+                        <li>
+                            <a href="product_category.php">Product Category</a>
+                        </li>
+                        <li>
+                            <a href="blog.php">Add Blog</a>
+                        </li>
+                        <li>
+                            <a href="manage_blog.php">Manage Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>
