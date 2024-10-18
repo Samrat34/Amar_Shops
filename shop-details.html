@@ -140,18 +140,13 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="product__details__pic">
                         <div class="product__details__pic__item">
-                            <img class="product__details__pic__item--large"
-                                src="img/product/details/product-details-1.jpg" alt="">
+                            <img class="product__details__pic__item--large" src="img/featured/feature-2.jpg" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="img/product/details/product-details-2.jpg"
-                                src="img/product/details/thumb-1.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-3.jpg"
-                                src="img/product/details/thumb-2.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-5.jpg"
-                                src="img/product/details/thumb-3.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-4.jpg"
-                                src="img/product/details/thumb-4.jpg" alt="">
+                            <img data-imgbigurl="img/featured/feature-2.jpg" src="img/featured/feature-2.jpg" alt="">
+                            <img data-imgbigurl="img/featured/feature-2.jpg" src="img/featured/feature-2.jpg" alt="">
+                            <img data-imgbigurl="img/featured/feature-2.jpg" src="img/featured/feature-2.jpg" alt="">
+                            <img data-imgbigurl="img/featured/feature-2.jpg" src="img/featured/feature-2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -166,7 +161,7 @@
                             <i class="fa fa-star-half-o"></i>
                             <span>(18 reviews)</span>
                         </div>
-                        <div class="product__details__price">$50.00</div>
+                        <div class="product__details__price">Taka-30.00</div>
                         <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
                             vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
                             quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
@@ -257,24 +252,108 @@
                             </div>
                             <div class="tab-pane" id="tabs-3" role="tabpanel">
                                 <div class="product__details__tab__desc">
-                                    <h6>Products Infomation</h6>
-                                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                                        Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.
-                                        Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam
-                                        sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo
-                                        eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.
-                                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent
-                                        sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac
-                                        diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante
-                                        ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                        Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                                        Proin eget tortor risus.</p>
+                                    <h6>Customer Reviews</h6>
+
+                                    <!-- Review List -->
+                                    <div class="review__list">
+                                        <!-- Review 1 -->
+                                        <div class="review__item">
+                                            <div class="review__author">
+                                                <h6>John Doe</h6>
+                                                <span>★★★★☆</span> <!-- Star rating out of 5 -->
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies
+                                                ligula sed magna dictum porta. Highly recommend this product!</p>
+                                            <!-- Review Images -->
+                                            <div class="review__images">
+                                                <img src="img/review1-1.jpg" alt="Review Image 1" width="100px"
+                                                    height="100px">
+                                                <img src="img/review1-2.jpg" alt="Review Image 2" width="100px"
+                                                    height="100px">
+                                            </div>
+                                        </div>
+
+                                        <!-- Review 2 -->
+                                        <div class="review__item">
+                                            <div class="review__author">
+                                                <h6>Jane Smith</h6>
+                                                <span>★★★★★</span> <!-- Star rating out of 5 -->
+                                            </div>
+                                            <p>Excellent quality! Vestibulum ac diam sit amet quam vehicula elementum
+                                                sed sit amet dui.</p>
+                                            <!-- Review Images -->
+                                            <div class="review__images">
+                                                <img src="img/review2-1.jpg" alt="Review Image 1" width="100px"
+                                                    height="100px">
+                                            </div>
+                                        </div>
+
+                                        <!-- Review 3 -->
+                                        <div class="review__item">
+                                            <div class="review__author">
+                                                <h6>Mark Johnson</h6>
+                                                <span>★★★☆☆</span> <!-- Star rating out of 5 -->
+                                            </div>
+                                            <p>Good, but the packaging could have been better. Proin eget tortor risus.
+                                            </p>
+                                            <!-- Review Images -->
+                                            <div class="review__images">
+                                                <img src="img/review3-1.jpg" alt="Review Image 1" width="100px"
+                                                    height="100px">
+                                                <img src="img/review3-2.jpg" alt="Review Image 2" width="100px"
+                                                    height="100px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Review List -->
                                 </div>
+
+                                <!-- Add New Review Form as a Centered Card -->
+                                <div id="review" class="d-flex justify-content-center align-items-center "
+                                    style="min-height: 100vh;">
+                                    <div class="card col-lg-8 col-md-8 col-sm-10">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center">Add a Review</h4>
+                                            <form action="/submit-review" method="POST" enctype="multipart/form-data">
+                                                <div class="form-group">
+                                                    <label for="reviewer-name">Your Name</label>
+                                                    <input type="text" id="reviewer-name" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="reviewer-rating">Your Rating</label>
+                                                    <select id="reviewer-rating" class="form-control">
+                                                        <option value="5">★★★★★</option>
+                                                        <option value="4">★★★★☆</option>
+                                                        <option value="3">★★★☆☆</option>
+                                                        <option value="2">★★☆☆☆</option>
+                                                        <option value="1">★☆☆☆☆</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="review-comment">Your Comment</label>
+                                                    <textarea id="review-comment" class="form-control" rows="3"
+                                                        required></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="review-images">Upload Images (Optional, max 2)</label>
+                                                    <input type="file" id="review-images" name="review-images[]"
+                                                        class="form-control" multiple accept="image/*">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary btn-block">Submit
+                                                    Review</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Product Details Section End -->

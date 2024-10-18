@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/cstyle.css" type="text/css">
     <link rel="stylesheet" href="css/profile.css" type="text/css">
+    <!-- Bootstrap JS (ensure you have the latest version) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
     <style>
         .editable-image {
             cursor: pointer;
@@ -146,23 +150,95 @@
 
             <!-- Breadcrumb/Navbar -->
             <nav aria-label="breadcrumb" class="main-breadcrumb">
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#" onclick="showPage('profile')">Your Profile</a></li>
-                    <li class="breadcrumb-item"><a href="#" onclick="showPage('products')">Your Products</a></li>
-                    <li class="breadcrumb-item"><a href="#" onclick="showPage('account')">Order History</a></li>
-                    <!-- <li class="breadcrumb-item"><a href="#" onclick="showPage('manage')">Manage Profile</a></li> -->
-                    <li class="breadcrumb-item"><a href="#" onclick="showPage('manage')">Log Out</a></li>
-                </ul>
+                <nav class="main-breadcrumb breadcrumb d-flex justify-content-between align-items-center">
+                    <!-- Breadcrumb Menu -->
+                    <ul class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#" onclick="showPage('profile')">Your Profile</a></li>
+                        <li class="breadcrumb-item"><a href="#" onclick="showPage('products')">Your Products</a></li>
+                        <li class="breadcrumb-item"><a href="#" onclick="showPage('account')">Order History</a></li>
+                        <li class="breadcrumb-item"><a href="#" onclick="showPage('manage')">Log Out</a></li>
+                    </ul>
+                    <!-- Notification Dropdown -->
+                    <div class="dropdown">
+                        <a href="#" class="btn btn-light position-relative" id="notificationDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bell"></i>
+                            <!-- Notification badge -->
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                3 <!-- Example count -->
+                            </span>
+                        </a>
+
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown"
+                            style="width: 300px;">
+                            <li>
+                                <h6 class="dropdown-header">Notifications</h6>
+                            </li>
+                            <!-- Notification 1 -->
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="img/cart/cart-1.jpg" alt="Vegetable’s Package"
+                                        style="width: 40px; height: auto; margin-right: 10px;">
+                                    <span><strong>Order #1001</strong> delivered Complete</span>
+                                </a>
+                            </li>
+                            <!-- Notification 2 -->
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="img/cart/cart-2.jpg" alt="Fresh Garden Vegetable"
+                                        style="width: 40px; height: auto; margin-right: 10px;">
+                                    <span><strong>Order #1002</strong> was cancelled</span>
+                                </a>
+                            </li>
+                            <!-- Notification 3 -->
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="img/cart/cart-3.jpg" alt="Organic Bananas"
+                                        style="width: 40px; height: auto; margin-right: 10px;">
+                                    <span><strong>Order #1003</strong> is out for delivery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="img/cart/cart-3.jpg" alt="Organic Bananas"
+                                        style="width: 40px; height: auto; margin-right: 10px;">
+                                    <span><strong>Order #1003</strong> is out for delivery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="img/cart/cart-3.jpg" alt="Organic Bananas"
+                                        style="width: 40px; height: auto; margin-right: 10px;">
+                                    <span><strong>Order #1003</strong> is out for delivery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!-- View All Notifications -->
+                            <li>
+                                <a class="dropdown-item text-center" href="#">
+                                    View all notifications
+                                </a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </nav>
+
             </nav>
             <!-- Content Sections -->
-            <div id="profile" class="content-section profile-card">
+            <div id="profile" class="content-section profile-card" style="margin-top: 30px; padding: 20px;">
                 <!-- Profile Content -->
                 <div class="row gutters-sm">
                     <div class="col-md-4 mb-3">
-                        <div class="card">
+                        <div class="card" style="padding: 15px; margin-bottom: 15px;">
                             <div class="card-body">
                                 <div class="d-flex flex-column align-items-center text-center">
-                                    <div class="container text-center mt-5">
+                                    <div class="container text-center mt-4">
                                         <!-- Clickable Image -->
                                         <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin"
                                             class="rounded-circle editable-image" width="150" data-toggle="modal"
@@ -198,13 +274,11 @@
                                         <h4>Customer Name</h4>
                                         <p class="text-secondary mb-1">email@gmail.com</p>
                                         <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
-                                        <!-- <button class="btn btn-primary">Follow</button>
-                                        <button class="btn btn-outline-primary">Message</button> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mt-3">
+                        <div class="card mt-3" style="padding: 10px;">
                             <ul class="list-group list-group-flush">
                                 <!-- Customer ID -->
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
@@ -242,7 +316,6 @@
                                     <span class="text-secondary">123 Main St, City, Country</span>
                                 </li>
 
-
                                 <!-- Account Creation Date -->
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0">Account Created</h6>
@@ -259,8 +332,7 @@
                                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                        </svg>
-                                        Instagram
+                                        </svg> Instagram
                                     </h6>
                                     <span class="text-secondary">@customer_handle</span>
                                 </li>
@@ -269,9 +341,9 @@
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <div class="card mb-3">
+                        <div class="card mb-3" style="padding: 20px;">
                             <div class="card-body">
-                                <div class="row">
+                                <div class="row mb-3">
                                     <div class="col-sm-3">
                                         <h6 class="mb-0">Full Name</h6>
                                     </div>
@@ -280,7 +352,7 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="row">
+                                <div class="row mb-3">
                                     <div class="col-sm-3">
                                         <h6 class="mb-0">Email</h6>
                                     </div>
@@ -289,7 +361,7 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="row">
+                                <div class="row mb-3">
                                     <div class="col-sm-3">
                                         <h6 class="mb-0">Phone</h6>
                                     </div>
@@ -298,7 +370,7 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="row">
+                                <div class="row mb-3">
                                     <div class="col-sm-3">
                                         <h6 class="mb-0">Mobile</h6>
                                     </div>
@@ -307,7 +379,7 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="row">
+                                <div class="row mb-3">
                                     <div class="col-sm-3">
                                         <h6 class="mb-0">Address</h6>
                                     </div>
@@ -317,7 +389,7 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="row">
+                                <div class="row mb-3">
                                     <div class="col-sm-3">
                                         <h6 class="mb-0">Date of Birth</h6>
                                     </div>
@@ -326,7 +398,7 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="row">
+                                <div class="row mb-3">
                                     <div class="col-sm-3">
                                         <h6 class="mb-0">Gender</h6>
                                     </div>
@@ -339,7 +411,7 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="row">
+                                <div class="row mb-3">
                                     <div class="col-sm-3">
                                         <h6 class="mb-0">Preferred Payment Method</h6>
                                     </div>
@@ -348,8 +420,8 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="row">
-                                    <div class="col-sm-12">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12 text-center">
                                         <button class="btn btn-info" onclick="enableEditing()">Edit</button>
                                         <button class="btn btn-success d-none" onclick="saveChanges()">Save</button>
                                         <button class="btn btn-secondary d-none"
@@ -361,6 +433,7 @@
                     </div>
                 </div>
             </div>
+
 
             <div id="products" class="content-section" style="display:none;">
                 <div class="row">
@@ -468,7 +541,6 @@
                                                 <i class="fas fa-undo"></i>
                                             </button>
                                         </td>
-
                                     </tr>
                                     <!-- Repeat similar structure for additional rows -->
                                 </tbody>
@@ -480,7 +552,10 @@
 
             <div id="account" class="content-section" style="display:none;">
                 <h2>Order History</h2>
-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quasi rem? Perferendis tenetur
+                    aliquid tempore iusto, voluptatem rem totam accusamus culpa quibusdam assumenda impedit quod minus
+                    cupiditate error ducimus qui numquam repellendus? Repellat quasi facere qui eum est nulla fugiat!
+                </p>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="order-history__table">
@@ -509,8 +584,14 @@
                                             <button class="btn btn-light btn-sm" title="Reorder">
                                                 <i class="fas fa-redo"></i>
                                             </button>
-                                            <button class="btn btn-light btn-sm" title="Track Order">
+                                            <button class="btn btn-light btn-sm" title="Track Order"
+                                                data-bs-toggle="modal" data-bs-target="#trackOrderModal"
+                                                onclick="showTrackingDetails('#1001', 'Your order is being delivered')">
                                                 <i class="fas fa-truck-moving"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm" title="Review" data-bs-toggle="modal"
+                                                data-bs-target="#reviewModal">
+                                                <i class="fas fa-star"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -526,7 +607,9 @@
                                             <button class="btn btn-light btn-sm" title="Reorder">
                                                 <i class="fas fa-redo"></i>
                                             </button>
-                                            <button class="btn btn-light btn-sm" title="Track Order">
+                                            <button class="btn btn-light btn-sm" title="Track Order"
+                                                data-bs-toggle="modal" data-bs-target="#trackOrderModal"
+                                                onclick="showTrackingDetails('#1002', 'Your order has been cancelled')">
                                                 <i class="fas fa-truck-moving"></i>
                                             </button>
                                         </td>
@@ -543,8 +626,14 @@
                                             <button class="btn btn-light btn-sm" title="Reorder">
                                                 <i class="fas fa-redo"></i>
                                             </button>
-                                            <button class="btn btn-light btn-sm" title="Track Order">
+                                            <button class="btn btn-light btn-sm" title="Track Order"
+                                                data-bs-toggle="modal" data-bs-target="#trackOrderModal"
+                                                onclick="showTrackingDetails('#1003', 'Your order is being delivered')">
                                                 <i class="fas fa-truck-moving"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm" title="Review" data-bs-toggle="modal"
+                                                data-bs-target="#reviewModal">
+                                                <i class="fas fa-star"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -554,6 +643,40 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal for adding a review -->
+            <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="reviewModalLabel">Submit Your Review</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="rating" class="form-label">Rating</label>
+                                    <select class="form-select" id="rating" required>
+                                        <option value="">Choose...</option>
+                                        <option value="1">1 - Very Bad</option>
+                                        <option value="2">2 - Bad</option>
+                                        <option value="3">3 - Average</option>
+                                        <option value="4">4 - Good</option>
+                                        <option value="5">5 - Excellent</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewText" class="form-label">Review</label>
+                                    <textarea class="form-control" id="reviewText" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Review</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="manage" class="content-section" style="display:none;">
                 <h2>You are Successfully Log Out</h2>
                 <!-- Insert your manage profile HTML content here -->

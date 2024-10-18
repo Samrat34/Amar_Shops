@@ -50,21 +50,21 @@
                         <li>
                             <a href="pages-contact-list.php">User List</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="pages-profile.php">Profile</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="pages-timeline.php">Timeline</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="pages-invoice.php">Invoice</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="pages-faq.php">FAQ</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="pages-pricing.php">Pricing</a>
-                        </li>
+                        </li> -->
                         <!-- <li>
                             <a href="pages-maintenance.php">Maintenance</a>
                         </li>
@@ -89,8 +89,8 @@
                 <div class="collapse" id="sidebarMultiLevel">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="manage-products.php">Product Request</a>
-                            <a href="add-products.php">Add Product</a>
+                            <a href="manage-products.php">Product List</a>
+                            <a href="add-products.php">Product Request</a>
                             <a href="media.php">Media Request</a>
                         </li>
                         <!-- <li class="side-nav-item">
@@ -141,32 +141,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="side-nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarPagesAuth" aria-expanded="false" aria-controls="sidebarPagesAuth" class="side-nav-link">
-                    <i class="ri-group-2-line"></i>
-                    <span> Authentication </span>
-                    <span class="menu-arrow"></span>
-                </a>
-                <div class="collapse" id="sidebarPagesAuth">
-                    <ul class="side-nav-second-level">
-                        <li>
-                            <a href="auth-login.php">Login</a>
-                        </li>
-                        <li>
-                            <a href="auth-register.php">Register</a>
-                        </li>
-                        <li>
-                            <a href="auth-logout.php">Logout</a>
-                        </li>
-                        <li>
-                            <a href="auth-forgotpw.php">Forgot Password</a>
-                        </li>
-                        <li>
-                            <a href="auth-lock-screen.php">Lock Screen</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
+
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarExtendedUI" aria-expanded="false" aria-controls="sidebarExtendedUI" class="side-nav-link">
                     <i class="ri-compasses-2-line"></i>
@@ -219,10 +194,52 @@
                     </ul>
                 </div>
             </li>
-
-            <li class="side-nav-title">Components</li>
-
             <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarPagesAuth" aria-expanded="false" aria-controls="sidebarPagesAuth" class="side-nav-link">
+                    <i class="ri-group-2-line"></i>
+                    <span> Authentication </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarPagesAuth">
+                    <ul class="side-nav-second-level">
+                        <!-- <li>
+                            <a href="auth-login.php">Login</a>
+                        </li>
+                        <li>
+                            <a href="auth-register.php">Register</a>
+                        </li> -->
+                        <li>
+                            <a href="auth-logout.php">Logout</a>
+                        </li>
+                        <!-- <li>
+                            <a href="auth-forgotpw.php">Forgot Password</a>
+                        </li> -->
+                        <li>
+                            <a href="auth-lock-screen.php">Lock Screen</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="side-nav-title">Components</li>
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarBaseUI" aria-expanded="false" aria-controls="sidebarBaseUI" class="side-nav-link">
+                    <i class="ri-briefcase-line"></i>
+                    <span> Go To </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarBaseUI">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="">Vendor Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Mani Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--    <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarBaseUI" aria-expanded="false" aria-controls="sidebarBaseUI" class="side-nav-link">
                     <i class="ri-briefcase-line"></i>
                     <span> Base UI </span>
@@ -312,7 +329,7 @@
                 </div>
             </li>
 
-            <li class="side-nav-item">
+             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarExtendedUI" aria-expanded="false" aria-controls="sidebarExtendedUI" class="side-nav-link">
                     <i class="ri-compasses-2-line"></i>
                     <span> Extended UI </span>
@@ -454,7 +471,7 @@
                     </ul>
                 </div>
             </li>
-
+ -->
 
 
 

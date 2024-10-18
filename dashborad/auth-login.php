@@ -40,10 +40,10 @@ if (isset($_POST['email'])) {
                                 <div class="d-flex flex-column h-100">
                                     <div class="auth-brand p-4">
                                         <a href="index.php" class="logo-light">
-                                            <img src="assets/images/logo.png" alt="logo" height="22">
+                                            <img src="assets/images/logo.png" alt="logo" height="40">
                                         </a>
                                         <a href="index.php" class="logo-dark">
-                                            <img src="assets/images/logo-dark.png" alt="dark logo" height="22">
+                                            <img src="assets/images/logo.png" alt="dark logo" height="40">
                                         </a>
                                     </div>
                                     <div class="p-4 my-auto">
@@ -74,7 +74,7 @@ if (isset($_POST['email'])) {
                                                 </div>
                                             </div>
                                             <div class="mb-0 text-start">
-                                                <button class="btn btn-soft-primary w-100" type="submit"><i class="ri-login-circle-fill me-1"></i> <span class="fw-bold"><a href="index.php">Log
+                                                <button class="btn btn-soft-primary w-100" type="submit"><i class="ri-login-circle-fill me-1"></i> <span class="fw-bold"><a href="../vendor_dashbord/index.php">Log
                                                             In</a></span> </button>
                                             </div>
 

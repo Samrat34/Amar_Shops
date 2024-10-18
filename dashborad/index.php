@@ -181,7 +181,7 @@
                                     <p><strong>Balance:</strong> <span id="vendorBalance"></span></p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">View Profile</button>
+                                    <a href="pages-profile.php"><button type="button" class="btn btn-primary">View Profile</button></a>
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
