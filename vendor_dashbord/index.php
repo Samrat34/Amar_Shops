@@ -38,7 +38,7 @@
 
                     <?php
                     $sub_title = "Dashboards";
-                    $page_title = "Welcome! @UsersName";
+                    $page_title = "Welcome! @VendorName";
                     include 'partials/page-title.php'; ?>
 
 
@@ -56,7 +56,7 @@
                                         <i class="ri-eye-line widget-icon"></i>
                                     </div>
                                     <h6 class="text-uppercase mt-0" title="Customers">Total Sales</h6>
-                                    <h2 class="my-2">$8,652</h2>
+                                    <h2 class="my-2">৳8,652</h2>
                                     <p class="mb-0">
                                         <span class="badge bg-white bg-opacity-10 me-1">2.97%</span>
                                         <span class="text-nowrap">Since last month</span>
@@ -71,10 +71,10 @@
                                     <div class="float-end">
                                         <i class="ri-wallet-2-line widget-icon"></i>
                                     </div>
-                                    <h6 class="text-uppercase mt-0" title="Customers">Revenue</h6>
-                                    <h2 class="my-2">$9,254.62</h2>
+                                    <h6 class="text-uppercase mt-0" title="Customers">Taks</h6>
+                                    <h2 class="my-2">৳900</h2>
                                     <p class="mb-0">
-                                        <span class="badge bg-white bg-opacity-10 me-1">18.25%</span>
+                                        <!-- <span class="badge bg-white bg-opacity-10 me-1">18.25%</span> -->
                                         <span class="text-nowrap">Since last month</span>
                                     </p>
                                 </div>
@@ -134,7 +134,7 @@
                                         <i class="ri-group-2-line widget-icon"></i>
                                     </div>
                                     <h6 class="text-uppercase mt-0" title="Customers">Discount</h6>
-                                    <h2 class="my-2">63,154</h2>
+                                    <h2 class="my-2">63</h2>
                                     <p class="mb-0">
                                         <span class="badge bg-white bg-opacity-10 me-1">8.21%</span>
                                         <span class="text-nowrap">Since last month</span>
@@ -173,9 +173,9 @@
                                                     <td>
                                                         <i class="ri-line-chart-line me-1"></i> +1%
                                                     </td>
-                                                    <td>$100</td>
+                                                    <td>৳100</td>
                                                     <td>50</td>
-                                                    <td>$5000</td>
+                                                    <td>৳5000</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="table-user">
@@ -185,9 +185,9 @@
                                                     <td>
                                                         <i class="ri-arrow-down-s-line me-1" style="color: red;"></i> -2%
                                                     </td>
-                                                    <td>$200</td>
+                                                    <td>৳200</td>
                                                     <td>30</td>
-                                                    <td>$6000</td>
+                                                    <td>৳6000</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="table-user">
@@ -197,9 +197,9 @@
                                                     <td>
                                                         <i class="ri-line-chart-line me-1"></i> +3%
                                                     </td>
-                                                    <td>$150</td>
+                                                    <td>৳150</td>
                                                     <td>25</td>
-                                                    <td>$3750</td>
+                                                    <td>৳3750</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="table-user">
@@ -209,9 +209,9 @@
                                                     <td>
                                                         <i class="ri-arrow-down-s-line me-1" style="color: red;"></i> -1%
                                                     </td>
-                                                    <td>$120</td>
+                                                    <td>৳120</td>
                                                     <td>40</td>
-                                                    <td>$4800</td>
+                                                    <td>৳4800</td>
                                                 </tr>
                                             </tbody>
 

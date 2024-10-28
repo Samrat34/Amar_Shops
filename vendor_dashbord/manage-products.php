@@ -63,7 +63,7 @@
                                                     </select>
                                                 </td>
                                                 <td>SKU12345</td>
-                                                <td>$99.99</td>
+                                                <td>৳99.99</td>
                                                 <td>Variant 1</td>
                                                 <td>
                                                     <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-settings-3-line"></i></a>
@@ -83,7 +83,7 @@
                                                     </select>
                                                 </td>
                                                 <td>SKU12345</td>
-                                                <td>$99.99</td>
+                                                <td>৳99.99</td>
                                                 <td>Variant 1</td>
                                                 <td>
                                                     <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-settings-3-line"></i></a>
@@ -103,7 +103,7 @@
                                                     </select>
                                                 </td>
                                                 <td>SKU12345</td>
-                                                <td>$99.99</td>
+                                                <td>৳99.99</td>
                                                 <td>Variant 1</td>
                                                 <td>
                                                     <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-settings-3-line"></i></a>
@@ -123,7 +123,7 @@
                                                     </select>
                                                 </td>
                                                 <td>SKU12345</td>
-                                                <td>$99.99</td>
+                                                <td>৳99.99</td>
                                                 <td>Variant 1</td>
                                                 <td>
                                                     <a href="javascript:void(0);" class="text-reset fs-16 px-1"><i class="ri-settings-3-line"></i></a>

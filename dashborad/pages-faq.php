@@ -28,8 +28,6 @@
                     $sub_title = "Pages";
                     $page_title = "FAQ";
                     include 'partials/page-title.php'; ?>
-
-
                     <div class="row">
                         <div class="col-12">
                             <div class="row justify-content-center">
@@ -122,6 +120,86 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <!-- Left Column: FAQ Table -->
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="header-title">FAQ</h4>
+                                    <p class="text-muted mb-0">Frequently Asked Questions</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive-sm">
+                                        <table class="table table-striped table-centered mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>FAQ</th>
+                                                    <th>Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>What is Product A?</td>
+                                                    <td>Product A is a high-quality item designed to... <a href="#">More</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>How do I purchase Product B?</td>
+                                                    <td>Product B can be purchased directly from our online store by... <a href="#">More</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Can I return Product C?</td>
+                                                    <td>Yes, Product C has a 30-day return policy that allows you to... <a href="#">More</a></td>
+                                                </tr>
+                                                <!-- Add more FAQ rows as needed -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="header-title">Manage FAQs</h4>
+                                </div>
+                                <div class="card-body">
+                                    <!-- Add/Update Form -->
+                                    <form id="faqForm">
+                                        <div class="mb-3">
+                                            <label for="faqQuestion" class="form-label">FAQ Question</label>
+                                            <input type="text" class="form-control" id="faqQuestion" placeholder="Enter the question" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="faqAnswer" class="form-label">FAQ Answer</label>
+                                            <textarea class="form-control" id="faqAnswer" rows="3" placeholder="Enter the answer" required></textarea>
+                                        </div>
+                                        <input type="hidden" id="faqId" value="">
+
+                                        <!-- Submit Button for Adding or Updating FAQ -->
+                                        <button type="submit" class="btn btn-primary" id="submitFaqBtn">Add FAQ</button>
+                                        <button type="button" class="btn btn-warning" id="updateFaqBtn" style="display:none;">Update FAQ</button>
+                                    </form>
+
+                                    <!-- FAQ List for Deletion -->
+                                    <hr>
+                                    <h5 class="header-title">Existing FAQs</h5>
+                                    <ul class="list-group" id="faqList">
+                                        <!-- Dynamic List of FAQs (to be managed via JS or backend) -->
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <span>What is Product A?</span>
+                                            <div>
+                                                <button class="btn btn-sm btn-info" onclick="editFaq(1, 'What is Product A?', 'Product A is...')">Edit</button>
+                                                <button class="btn btn-sm btn-danger" onclick="deleteFaq(1)">Delete</button>
+                                            </div>
+                                        </li>
+                                        <!-- Additional FAQs will be appended here -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div> <!-- container -->
@@ -145,6 +223,49 @@
 
     <!-- App js -->
     <script src="assets/js/app.min.js"></script>
+    <script>
+        // Function to add or update FAQ (placeholder functionality)
+        document.getElementById('faqForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let question = document.getElementById('faqQuestion').value;
+            let answer = document.getElementById('faqAnswer').value;
+            let faqId = document.getElementById('faqId').value;
+
+            if (faqId) {
+                // Update FAQ logic
+                alert(`FAQ Updated: ${question}`);
+                // Perform update operation here
+                document.getElementById('faqId').value = ''; // Reset hidden field
+                document.getElementById('submitFaqBtn').style.display = 'block';
+                document.getElementById('updateFaqBtn').style.display = 'none';
+            } else {
+                // Add new FAQ logic
+                alert(`FAQ Added: ${question}`);
+                // Perform add operation here
+            }
+
+            // Clear form after submission
+            document.getElementById('faqForm').reset();
+        });
+
+        // Function to delete FAQ (placeholder functionality)
+        function deleteFaq(id) {
+            if (confirm('Are you sure you want to delete this FAQ?')) {
+                // Perform delete operation here
+                alert('FAQ Deleted');
+            }
+        }
+
+        // Function to load FAQ data into form for editing
+        function editFaq(id, question, answer) {
+            document.getElementById('faqQuestion').value = question;
+            document.getElementById('faqAnswer').value = answer;
+            document.getElementById('faqId').value = id; // Set ID to update
+
+            document.getElementById('submitFaqBtn').style.display = 'none';
+            document.getElementById('updateFaqBtn').style.display = 'block';
+        }
+    </script>
 
 </body>
 

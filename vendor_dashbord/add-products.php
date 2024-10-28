@@ -148,7 +148,7 @@
                                                     <td class="editable">Category Name</td>
                                                     <td class="editable">Red</td>
                                                     <td class="editable">M</td>
-                                                    <td class="editable">$20.00</td>
+                                                    <td class="editable">৳20.00</td>
                                                     <td class="editable">Short product description.</td>
                                                     <td class="editable">In Stock</td>
 
@@ -164,7 +164,7 @@
                                                     <td class="editable">Category Name</td>
                                                     <td class="editable">Red</td>
                                                     <td class="editable">M</td>
-                                                    <td class="editable">$20.00</td>
+                                                    <td class="editable">৳20.00</td>
                                                     <td class="editable">Short product description.</td>
                                                     <td class="editable">In Stock</td>
 
@@ -180,7 +180,7 @@
                                                     <td class="editable">Category Name</td>
                                                     <td class="editable">Red</td>
                                                     <td class="editable">M</td>
-                                                    <td class="editable">$20.00</td>
+                                                    <td class="editable">৳20.00</td>
                                                     <td class="editable">Short product description.</td>
                                                     <td class="editable">In Stock</td>
 
