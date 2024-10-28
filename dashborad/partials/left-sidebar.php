@@ -199,7 +199,23 @@
             </li>
 
             <li class="side-nav-title">Components</li>
-
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarMaps" aria-expanded="false" aria-controls="sidebarMaps" class="side-nav-link">
+                    <i class="ri-map-pin-line"></i>
+                    <span> Advance </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarMaps">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="future-product.php">Future Prediction</a>
+                        </li>
+                        <li>
+                            <a href="maps-vector.php">Vector Maps</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarBaseUI" aria-expanded="false" aria-controls="sidebarBaseUI" class="side-nav-link">
                     <i class="ri-briefcase-line"></i>
