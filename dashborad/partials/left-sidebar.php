@@ -165,7 +165,7 @@
                     </ul>
                 </div>
             </li>
-            <!-- <li class="side-nav-item">
+            <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>
                     <span class="badge bg-warning float-end">New</span>
@@ -213,6 +213,25 @@
                     </ul>
                 </div>
             </li>
+            
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarBaseUI" aria-expanded="false" aria-controls="sidebarBaseUI" class="side-nav-link">
+                    <i class="ri-briefcase-line"></i>
+                    <span> Go To </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarBaseUI">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="">Vendor Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Mani Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarPagesAuth" aria-expanded="false" aria-controls="sidebarPagesAuth" class="side-nav-link">
                     <i class="ri-group-2-line"></i>
@@ -239,26 +258,14 @@
                     </ul>
                 </div>
             </li>
+
+
+
+
+            
             <li class="side-nav-title">Components</li>
+            
             <li class="side-nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarBaseUI" aria-expanded="false" aria-controls="sidebarBaseUI" class="side-nav-link">
-                    <i class="ri-briefcase-line"></i>
-                    <span> Go To </span>
-                    <span class="menu-arrow"></span>
-                </a>
-                <div class="collapse" id="sidebarBaseUI">
-                    <ul class="side-nav-second-level">
-                        <li>
-                            <a href="">Vendor Dashboard
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">Mani Home</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <!--    <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarBaseUI" aria-expanded="false" aria-controls="sidebarBaseUI" class="side-nav-link">
                     <i class="ri-briefcase-line"></i>
                     <span> Base UI </span>

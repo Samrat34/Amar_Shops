@@ -28,14 +28,14 @@
                     $sub_title = "Future Product";
                     $page_title = "Future Products";
                     include 'partials/page-title.php'; ?>
+
                     <div class="row">
-                        <div class="col-xl-6">
+                       <div class="col-xl-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="header-title">Bordered color table</h4>
+                                    <h4 class="header-title">Top Rated Products</h4>
                                     <p class="text-muted mb-0">
-                                        Add <code>.table-bordered</code> & <code>.border-primary</code> can be added to
-                                        change colors.
+                                        This Product come from the Users 
                                     </p>
                                 </div>
                                 <div class="card-body">
@@ -43,71 +43,85 @@
                                         <table class="table table-bordered border-primary table-centered mb-0">
                                             <thead>
                                                 <tr>
-                                                    <th>User</th>
-                                                    <th>Account No.</th>
-                                                    <th>Balance</th>
-                                                    <th class="text-center">Action</th>
+                                                    <th>Product Image</th>
+                                                    <th>Product Name</th>
+                                                    <th>Category</th>
+                                                    <th>Price</th>
+                                                    <th class="text-center">Details</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="table-user">
-                                                        <img src="assets/images/users/avatar-6.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                        Risa D. Pearson
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/product-1.jpg" alt="product-1" class="me-2 rounded-circle" />
                                                     </td>
-                                                    <td>AC336 508 2157</td>
-                                                    <td>July 24, 1950</td>
+                                                    <td>Wireless Headphones</td>
+                                                    <td>Electronics</td>
+                                                    <td>$150</td>
                                                     <td class="text-center">
-                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1"> <i class="ri-delete-bin-2-line"></i></a>
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal1">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="table-user">
-                                                        <img src="assets/images/users/avatar-7.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                        Ann C. Thompson
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/product-2.jpg" alt="product-2" class="me-2 rounded-circle" />
                                                     </td>
-                                                    <td>SB646 473 2057</td>
-                                                    <td>January 25, 1959</td>
+                                                    <td>Smartwatch</td>
+                                                    <td>Wearables</td>
+                                                    <td>$250</td>
                                                     <td class="text-center">
-                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1"> <i class="ri-delete-bin-2-line"></i></a>
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal2">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="table-user">
-                                                        <img src="assets/images/users/avatar-8.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                        Paul J. Friend
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/product-3.jpg" alt="product-3" class="me-2 rounded-circle" />
                                                     </td>
-                                                    <td>DL281 308 0793</td>
-                                                    <td>September 1, 1939</td>
+                                                    <td>Bluetooth Speaker</td>
+                                                    <td>Audio</td>
+                                                    <td>$120</td>
                                                     <td class="text-center">
-                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1"> <i class="ri-delete-bin-2-line"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="table-user">
-                                                        <img src="assets/images/users/avatar-9.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                        Sean C. Nguyen
-                                                    </td>
-                                                    <td>CA269 714 6825</td>
-                                                    <td>February 5, 1994</td>
-                                                    <td class="text-center">
-                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1"> <i class="ri-delete-bin-2-line"></i></a>
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal3">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div> <!-- end table-responsive-->
-
                                 </div> <!-- end card body-->
                             </div> <!-- end card -->
                         </div><!-- end col-->
+
+                        <!-- Product Modal 1 -->
+                        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel1">Wireless Headphones Details</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Description:</strong> High-quality wireless headphones with noise-cancellation and long battery life.</p>
+                                        <p><strong>Specifications:</strong> Bluetooth 5.0, 20-hour playtime, lightweight design.</p>
+                                        <p><strong>Ratings:</strong> 4.5/5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional modals for each product can be added in a similar format -->
+
                         <div class="col-xl-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="header-title">Bordered color table</h4>
+                                    <h4 class="header-title"></h4>
                                     <p class="text-muted mb-0">
-                                        Add <code>.table-bordered</code> & <code>.border-primary</code> can be added to
-                                        change colors.
+                                        Future Products
                                     </p>
                                 </div>
                                 <div class="card-body">
@@ -115,64 +129,244 @@
                                         <table class="table table-bordered border-primary table-centered mb-0">
                                             <thead>
                                                 <tr>
-                                                    <th>User</th>
-                                                    <th>Account No.</th>
-                                                    <th>Balance</th>
-                                                    <th class="text-center">Action</th>
+                                                    <th>Product Image</th>
+                                                    <th>Product Name</th>
+                                                    <th>Category</th>
+                                                    <th>Price</th>
+                                                    <th class="text-center">Details</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="table-user">
-                                                        <img src="assets/images/users/avatar-6.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                        Risa D. Pearson
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/topview-product-1.jpg" alt="product-1" class="me-2 rounded" style="width: 80px; height: 80px;" />
                                                     </td>
-                                                    <td>AC336 508 2157</td>
-                                                    <td>July 24, 1950</td>
+                                                    <td>Wireless Headphones</td>
+                                                    <td>Electronics</td>
+                                                    <td>$150</td>
                                                     <td class="text-center">
-                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1"> <i class="ri-delete-bin-2-line"></i></a>
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal1">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="table-user">
-                                                        <img src="assets/images/users/avatar-7.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                        Ann C. Thompson
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/topview-product-2.jpg" alt="product-2" class="me-2 rounded" style="width: 80px; height: 80px;" />
                                                     </td>
-                                                    <td>SB646 473 2057</td>
-                                                    <td>January 25, 1959</td>
+                                                    <td>Smartwatch</td>
+                                                    <td>Wearables</td>
+                                                    <td>$250</td>
                                                     <td class="text-center">
-                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1"> <i class="ri-delete-bin-2-line"></i></a>
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal2">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="table-user">
-                                                        <img src="assets/images/users/avatar-8.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                        Paul J. Friend
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/topview-product-3.jpg" alt="product-3" class="me-2 rounded" style="width: 80px; height: 80px;" />
                                                     </td>
-                                                    <td>DL281 308 0793</td>
-                                                    <td>September 1, 1939</td>
+                                                    <td>Bluetooth Speaker</td>
+                                                    <td>Audio</td>
+                                                    <td>$120</td>
                                                     <td class="text-center">
-                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1"> <i class="ri-delete-bin-2-line"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="table-user">
-                                                        <img src="assets/images/users/avatar-9.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                        Sean C. Nguyen
-                                                    </td>
-                                                    <td>CA269 714 6825</td>
-                                                    <td>February 5, 1994</td>
-                                                    <td class="text-center">
-                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1"> <i class="ri-delete-bin-2-line"></i></a>
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal3">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div> <!-- end table-responsive-->
-
                                 </div> <!-- end card body-->
                             </div> <!-- end card -->
                         </div><!-- end col-->
+
+                        <!-- Product Modal 1 -->
+                        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel1">Wireless Headphones Details</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Description:</strong> High-quality wireless headphones with noise-cancellation and long battery life.</p>
+                                        <p><strong>Specifications:</strong> Bluetooth 5.0, 20-hour playtime, lightweight design.</p>
+                                        <p><strong>Ratings:</strong> 4.5/5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional modals for each product can be added similarly -->
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="header-title"> Top View Product</h4>
+                                    <p class="text-muted mb-0">
+                                        This table displays top-view images of products. Use <code>.table-bordered</code> & <code>.border-primary</code> to change colors.
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive-sm">
+                                        <table class="table table-bordered border-primary table-centered mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Product Image</th>
+                                                    <th>Product Name</th>
+                                                    <th>Category</th>
+                                                    <th>Price</th>
+                                                    <th class="text-center">Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/topview-product-1.jpg" alt="product-1" class="me-2 rounded" style="width: 80px; height: 80px;" />
+                                                    </td>
+                                                    <td>Wireless Headphones</td>
+                                                    <td>Electronics</td>
+                                                    <td>$150</td>
+                                                    <td class="text-center">
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal1">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/topview-product-2.jpg" alt="product-2" class="me-2 rounded" style="width: 80px; height: 80px;" />
+                                                    </td>
+                                                    <td>Smartwatch</td>
+                                                    <td>Wearables</td>
+                                                    <td>$250</td>
+                                                    <td class="text-center">
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal2">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/topview-product-3.jpg" alt="product-3" class="me-2 rounded" style="width: 80px; height: 80px;" />
+                                                    </td>
+                                                    <td>Bluetooth Speaker</td>
+                                                    <td>Audio</td>
+                                                    <td>$120</td>
+                                                    <td class="text-center">
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal3">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- end table-responsive-->
+                                </div> <!-- end card body-->
+                            </div> <!-- end card -->
+                        </div><!-- end col-->
+
+                        <!-- Product Modal 1 -->
+                        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel1">Wireless Headphones Details</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Description:</strong> High-quality wireless headphones with noise-cancellation and long battery life.</p>
+                                        <p><strong>Specifications:</strong> Bluetooth 5.0, 20-hour playtime, lightweight design.</p>
+                                        <p><strong>Ratings:</strong> 4.5/5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="header-title"> Latest Product</h4>
+                                    <p class="text-muted mb-0">
+                                        
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive-sm">
+                                        <table class="table table-bordered border-primary table-centered mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Product Image</th>
+                                                    <th>Product Name</th>
+                                                    <th>Category</th>
+                                                    <th>Price</th>
+                                                    <th class="text-center">Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/topview-product-1.jpg" alt="product-1" class="me-2 rounded" style="width: 80px; height: 80px;" />
+                                                    </td>
+                                                    <td>Wireless Headphones</td>
+                                                    <td>Electronics</td>
+                                                    <td>$150</td>
+                                                    <td class="text-center">
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal1">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/topview-product-2.jpg" alt="product-2" class="me-2 rounded" style="width: 80px; height: 80px;" />
+                                                    </td>
+                                                    <td>Smartwatch</td>
+                                                    <td>Wearables</td>
+                                                    <td>$250</td>
+                                                    <td class="text-center">
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal2">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-product">
+                                                        <img src="assets/images/products/topview-product-3.jpg" alt="product-3" class="me-2 rounded" style="width: 80px; height: 80px;" />
+                                                    </td>
+                                                    <td>Bluetooth Speaker</td>
+                                                    <td>Audio</td>
+                                                    <td>$120</td>
+                                                    <td class="text-center">
+                                                        <a href="javascript: void(0);" class="text-reset fs-16 px-1" data-bs-toggle="modal" data-bs-target="#productModal3">
+                                                            <i class="ri-information-line"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- end table-responsive-->
+                                </div> <!-- end card body-->
+                            </div> <!-- end card -->
+                        </div><!-- end col-->
+
+                        <!-- Product Modal 1 -->
+                        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel1">Wireless Headphones Details</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Description:</strong> High-quality wireless headphones with noise-cancellation and long battery life.</p>
+                                        <p><strong>Specifications:</strong> Bluetooth 5.0, 20-hour playtime, lightweight design.</p>
+                                        <p><strong>Ratings:</strong> 4.5/5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
                     </div>
 
