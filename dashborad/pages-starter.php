@@ -2,7 +2,7 @@
 
 <head>
     <?php
-    $title = "Starter Page";
+    $title = 'Starter Page';
     include 'partials/title-meta.php'; ?>
 
     <?php include 'partials/head-css.php'; ?>
@@ -25,8 +25,8 @@
                 <div class="container-fluid">
 
                     <?php
-                    $sub_title = "Pages";
-                    $page_title = "Starter";
+                    $sub_title = 'Pages';
+                    $page_title = 'Starter';
                     include 'partials/page-title.php'; ?>
 
                 </div> <!-- container -->
@@ -50,6 +50,7 @@
 
     <!-- App js -->
     <script src="assets/js/app.min.js"></script>
+
 
 </body>
 

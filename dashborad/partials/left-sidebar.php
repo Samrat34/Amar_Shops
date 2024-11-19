@@ -165,7 +165,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="side-nav-item">
+            <!-- <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>
                     <span class="badge bg-warning float-end">New</span>
@@ -193,7 +193,7 @@
                         </li>
                     </ul>
                 </div>
-            </li>
+            </li> -->
 
             <li class="side-nav-title">Components</li>
             <li class="side-nav-item">
@@ -213,7 +213,7 @@
                     </ul>
                 </div>
             </li>
-            
+
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarBaseUI" aria-expanded="false" aria-controls="sidebarBaseUI" class="side-nav-link">
                     <i class="ri-briefcase-line"></i>
@@ -262,9 +262,9 @@
 
 
 
-            
-            <li class="side-nav-title">Components</li>
-            
+
+            <!-- <li class="side-nav-title">Components</li>
+
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarBaseUI" aria-expanded="false" aria-controls="sidebarBaseUI" class="side-nav-link">
                     <i class="ri-briefcase-line"></i>
@@ -355,7 +355,7 @@
                 </div>
             </li>
 
-             <li class="side-nav-item">
+            <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarExtendedUI" aria-expanded="false" aria-controls="sidebarExtendedUI" class="side-nav-link">
                     <i class="ri-compasses-2-line"></i>
                     <span> Extended UI </span>
@@ -496,8 +496,8 @@
                         </li>
                     </ul>
                 </div>
-            </li>
- -->
+            </li> -->
+
 
         </ul>
         <!--- End Sidemenu -->

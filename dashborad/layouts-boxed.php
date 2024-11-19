@@ -8,7 +8,7 @@
 
     <!-- Daterangepicker css -->
     <link rel="stylesheet" href="assets/css/vendor/daterangepicker.css">
-    
+
     <!-- Vector Map css -->
     <link rel="stylesheet" href="assets/css/vendor/jquery-jvectormap-1.2.2.css">
 
